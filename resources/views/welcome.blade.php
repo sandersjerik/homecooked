@@ -1,95 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+@section('content')
+    <div class="jumbotron"
+        style="background-image:url(https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f89e019b6df69f20b8e15f4f14d968fb);
+               background-size:cover;
+               background-repeat:no-repeat;
+               min-height:500px;
+               margin-top:-22px;
+               background-position:center;">
+        <div class="container" style="color:white;text-shadow:2px 2px 2px black;">
+            <div class="row hidden-sm hidden-xs">
+                <div class="col-md-6" style="border-right:1px solid white;">
+                    <h1 class="pull-right" style="text-align:right;"><small style="color:white">I want to</small><br><a href="#"><strong>Eat</strong></a></h1>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="col-md-6" style="border-left:1px solid white;">
+                    <h1 class="pull-left"><small style="color:white">I want to</small><br><a href="#"><strong>Cook</strong></a></h1>
                 </div>
             </div>
+            <div class="visible-xs-block visible-sm-block" style="text-align:center">
+                <h1><small style="color:white">I want to</small><br><a href="#"><strong>Eat</strong></a></h1>
+                <h1><small style="color:white">I want to</small><br><a href="#"><strong>Cook</strong></a></h1>
+            </div>
         </div>
-    </body>
-</html>
+    </div>
+@endsection
