@@ -9,6 +9,11 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    public function chef()
+    {
+        return $this->hasOne('App\Chef');
+    }
+
     /**
      * The attributes that are mass assignable.
      *
