@@ -8,7 +8,8 @@
         <h2>Your Meals</h2>
         <hr>
         <div class="row">
-            @foreach ($meals as $meal)
+            @for ($i = 0; $i < $meals->count(); $i++)
+                <?php $meal=$meals[$i] ?>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <img src="http://loremflickr.com/320/240/cooking?random={{ $meal->id }}">
@@ -22,7 +23,13 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+                @if ($i % 2 === 1)
+                    <div class="clearfix visible-xs-block visible-sm-block"></div>
+                @endif
+                @if ($i % 3 === 2)
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                @endif
+            @endfor
         </div> 
         <p><a href="{{ url('/meals/add') }}">Add New Meal</a></p>
     </div>
