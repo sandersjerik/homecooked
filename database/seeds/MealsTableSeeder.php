@@ -27,5 +27,8 @@ class MealsTableSeeder extends Seeder
         {
             $chef->meals()->create($meal);
         }
+        factory(App\Meal::class, 3)->create([
+            'chef_id' => $chef->id
+        ]);
     }
 }
