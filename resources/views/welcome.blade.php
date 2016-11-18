@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="jumbotron"
-        style="background-image:url(https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f89e019b6df69f20b8e15f4f14d968fb);
+        style="background-image:url(https://s3-us-west-2.amazonaws.com/www.homecookedeats.com/food+overhead+hig+res.jpg);
                background-size:cover;
                background-repeat:no-repeat;
                min-height:500px;

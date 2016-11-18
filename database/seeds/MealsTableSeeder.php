@@ -30,5 +30,10 @@ class MealsTableSeeder extends Seeder
         factory(App\Meal::class, 3)->create([
             'chef_id' => $chef->id
         ]);
+        $meals = App\Meal::all();
+        foreach($meals as $meal)
+        {
+            $meal->pictures()->create(['url' => 'http://loremflickr.com/320/240/cooking?random=' . $meal->id]);
+        }
     }
 }

@@ -12,7 +12,8 @@
                 <?php $meal=$meals[$i] ?>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="http://loremflickr.com/320/240/cooking?random={{ $meal->id }}">
+                        {{-- TODO: handle no picture --}}
+                        <img src="{{ $meal->pictures[0]->url }}">
                         <div class="caption">
                             <h3>{{ $meal->title}}</h3>
                             <p>{{ $meal->description }}</p>

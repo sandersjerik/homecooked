@@ -14,4 +14,9 @@ class Meal extends Model
     {
         return $this->belongsTo('App\Chef');
     }
+
+    public function pictures()
+    {
+        return $this->hasMany('App\MealPicture');
+    }
 }
