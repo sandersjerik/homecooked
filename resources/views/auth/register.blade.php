@@ -7,6 +7,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
+                    <p>Registrations coming soon. Email <a href="mailto:homecookedeats@outlook.com">homecookedeats@outlook.com</a> if you stumbled across this page.</p>
+                    {{--
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
 
@@ -68,6 +70,7 @@
                             </div>
                         </div>
                     </form>
+                    --}}
                 </div>
             </div>
         </div>
