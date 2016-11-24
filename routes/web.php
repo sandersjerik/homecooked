@@ -24,3 +24,6 @@ Route::get('/kitchen', 'ChefController@kitchen');
 
 Route::get('/meals/add', 'MealController@add');
 Route::post('/meals/create', 'MealController@create');
+
+// Customer routes
+Route::get('/eat', 'EatController@index');

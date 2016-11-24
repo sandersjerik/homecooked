@@ -50,6 +50,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li {!! (Request::is('kitchen')) ? 'class="active"' : '' !!}><a href="{{ url('/kitchen') }}">Kitchen</a></li>
+                        <li {!! (Request::is('eat')) ? 'class="active"' : '' !!}><a href="{{ url('/eat') }}">Eat</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
